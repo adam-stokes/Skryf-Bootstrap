@@ -1,10 +1,8 @@
-package App::skryf;
+package App::skryf::Bootstrap::Initialize;
 
 use Mojo::Base 'Mojolicious';
 use Class::Load ':all';
-use App::skryf::Model::Base;
-
-our $VERSION = '0.014_01';
+use App::skryf::Bootstrap::Model::Base;
 
 has admin_menu => sub {
   my $self = shift;
@@ -37,8 +35,8 @@ sub startup {
 ###############################################################################
 # Load Command and Plugin Namespaces
 ###############################################################################
-    push @{$self->commands->namespaces}, 'App::skryf::Command';
-    push @{$self->plugins->namespaces},  'App::skryf::Plugin';
+    push @{$self->commands->namespaces}, 'App::skryf::Bootstrap::Command';
+    push @{$self->plugins->namespaces},  'App::skryf::Bootstrap::Plugin';
 
     $self->helper(
         site => sub {

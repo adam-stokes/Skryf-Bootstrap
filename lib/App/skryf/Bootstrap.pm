@@ -1,8 +1,6 @@
 package App::skryf::Bootstrap;
 
-use strict;
-use 5.008_005;
-our $VERSION = '0.01';
+our $VERSION = '0.014_01';
 
 1;
 __END__
@@ -11,7 +9,7 @@ __END__
 
 =head1 NAME
 
-App::skryf::Bootstrap - Blah blah blah
+App::skryf::Bootstrap - Skryf bootstrap
 
 =head1 SYNOPSIS
 
@@ -19,7 +17,7 @@ App::skryf::Bootstrap - Blah blah blah
 
 =head1 DESCRIPTION
 
-App::skryf::Bootstrap is
+App::skryf::Bootstrap is bootstrap core functions for skryf
 
 =head1 AUTHOR
 
@@ -35,5 +33,7 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =head1 SEE ALSO
+
+L<App::skryf>
 
 =cut

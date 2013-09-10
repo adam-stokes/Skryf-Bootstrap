@@ -1,4 +1,4 @@
-package App::skryf::Plugin::Widget;
+package App::skryf::Bootstrap::Plugin::Widget;
 
 use Mojo::Base 'Mojolicious::Plugin';
 use File::Basename 'dirname';

@@ -1,4 +1,4 @@
-package App::skryf::Command::setup;
+package App::skryf::Bootstrap::Command::setup;
 
 use Mojo::Base 'Mojolicious::Command';
 use Mango::BSON ':bson';
